@@ -2,16 +2,76 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mes Audios</title>
-</head>
-<body>
-    <h1>Bienvenue sur mon site audio</h1>
+    <title>Lecteur Audio</title>
 
-    <h2>Audio 1</h2>
-    <audio controls>
-        <source src="audio/test.mp3" type="audio/mpeg">
-        Ton navigateur ne supporte pas l'audio.
-    </audio>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3c3c3c);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+
+        .audio-block {
+            background: rgba(255, 255, 255, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mes Audios</h1>
+
+    <div class="audio-block">
+        <h2>ROUSSEAU</h2>
+        <audio controls>
+            <source src="audio/ROUSSEAU.mp3" type="audio/mpeg">
+            Ton navigateur ne supporte pas l'audio.
+        </audio>
+    </div>
+
+    <div class="audio-block">
+        <h2>DIDEROT</h2>
+        <audio controls>
+            <source src="audio/DIDEROT.mp3" type="audio/mpeg">
+            Ton navigateur ne supporte pas l'audio.
+        </audio>
+    </div>
+
+    <div class="audio-block">
+        <h2>VOLTAIRE</h2>
+        <audio controls>
+            <source src="audio/VOLTAIRE.mp3" type="audio/mpeg">
+            Ton navigateur ne supporte pas l'audio.
+        </audio>
+    </div>
 
 </body>
 </html>
