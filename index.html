@@ -2,75 +2,78 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Lecteur Audio</title>
-
+    <title>Podcast – Lecture des philosophes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e1e1e, #3c3c3c);
-            color: white;
+            background: #f2f2f2;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
         }
 
         h1 {
-            margin-top: 40px;
-            font-size: 40px;
-            letter-spacing: 2px;
-            font-weight: 300;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        .audio-block {
-            background: rgba(255, 255, 255, 0.1);
-            width: 80%;
-            max-width: 600px;
-            margin: 30px auto;
+        .card {
+            background: white;
             padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        h2 {
-            font-size: 28px;
-            font-weight: 400;
-            margin-bottom: 15px;
+        .card h2 {
+            margin-top: 0;
         }
 
         audio {
             width: 100%;
-            outline: none;
+            margin-top: 10px;
         }
     </style>
 </head>
-
 <body>
 
-    <h1>Mes Audios</h1>
+    <div class="container">
 
-    <div class="audio-block">
-        <h2>ROUSSEAU</h2>
-        <audio controls>
-            <source src="audio/ROUSSEAU.mp3" type="audio/mpeg">
-            Ton navigateur ne supporte pas l'audio.
-        </audio>
-    </div>
+        <h1>Lectures audio – Rousseau, Diderot, Voltaire</h1>
 
-    <div class="audio-block">
-        <h2>DIDEROT</h2>
-        <audio controls>
-            <source src="audio/DIDEROT.mp3" type="audio/mpeg">
-            Ton navigateur ne supporte pas l'audio.
-        </audio>
-    </div>
+        <!-- ROUSSEAU -->
+        <div class="card">
+            <h2>Jean-Jacques Rousseau</h2>
+            <audio controls>
+                <source src="audio/ROUSSEAU.mp3" type="audio/mpeg">
+                Ton navigateur ne supporte pas l’audio.
+            </audio>
+        </div>
 
-    <div class="audio-block">
-        <h2>VOLTAIRE</h2>
-        <audio controls>
-            <source src="audio/VOLTAIRE.mp3" type="audio/mpeg">
-            Ton navigateur ne supporte pas l'audio.
-        </audio>
+        <!-- DIDEROT -->
+        <div class="card">
+            <h2>Denis Diderot</h2>
+            <audio controls>
+                <source src="audio/DIDEROT.mp3" type="audio/mpeg">
+                Ton navigateur ne supporte pas l’audio.
+            </audio>
+        </div>
+
+        <!-- VOLTAIRE -->
+        <div class="card">
+            <h2>Voltaire</h2>
+            <audio controls>
+                <source src="audio/VOLTAIRE.mp3" type="audio/mpeg">
+                Ton navigateur ne supporte pas l’audio.
+            </audio>
+        </div>
+
     </div>
 
 </body>
