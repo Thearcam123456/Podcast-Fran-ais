@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Audios</title>
+</head>
+<body>
+    <h1>Bienvenue sur mon site audio</h1>
+
+    <h2>Audio 1</h2>
+    <audio controls>
+        <source src="audio/test.mp3" type="audio/mpeg">
+        Ton navigateur ne supporte pas l'audio.
+    </audio>
+
+</body>
+</html>
